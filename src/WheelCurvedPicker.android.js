@@ -60,7 +60,7 @@ class WheelCurvedPicker extends PureComponent {
     return (
       <WheelCurvedPickerNative
         {...otherProps}
-        onValueChange={this.onValueChange}
+        onValueChange={()=>this.onValueChange}
         data={this.state.items}
         selectedIndex={parseInt(this.state.selectedIndex, 10)}
       />
